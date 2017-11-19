@@ -1,2 +1,2 @@
 # Alipay
-爽身粉
+react-native study
