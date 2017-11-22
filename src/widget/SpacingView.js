@@ -2,7 +2,7 @@
  * Copyright (c) 2017-present, Liu Jinyong
  * All rights reserved.
  *
- * https://github.com/huanxsd/MeiTuan  
+ * https://github.com/huanxsd/MeiTuan
  * @flow
  */
 
@@ -26,7 +26,7 @@ class SpacingView extends PureComponent {
 const styles = StyleSheet.create({
     container: {
         height: 14,
-        backgroundColor: color.background,
+        backgroundColor: 'red',
     },
 });
 

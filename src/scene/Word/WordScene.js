@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, StatusBar, Image, TouchableOpacity, ScrollView, RefreshControl } from 'react-native'
+import { View, Text, StyleSheet, StatusBar, Image, TouchableOpacity, ScrollView, RefreshControl ,TextInput} from 'react-native'
 
 import { Heading1, Heading2, Paragraph } from '../../widget/Text'
 import { screen, system, tool } from '../../common'
@@ -30,11 +30,28 @@ class WordScene extends Component {
       ),
       headerStyle: { backgroundColor: color.theme },
   })
+  dealWithState() {
+          // 让输入框获得焦点
+          this.refs.mytextInput.focus();
+          // 查看内容属性
+          console.log(this.refs.mainView);
+      }
+
+
 
   render(){
       return (
           <View style={styles.container}>
-              <Text>口碑</Text>
+          <View ref="mainView" style={styles.container}>
+                <TouchableOpacity
+                    onPress={() => {this.dealWithState()}}
+                >
+                    <Text>值</Text>
+                </TouchableOpacity>
+                <TextInput ref="mytextInput"></TextInput>
+            </View>
+
+
           </View>
       );
   }
