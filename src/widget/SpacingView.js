@@ -25,8 +25,8 @@ class SpacingView extends PureComponent {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        height: 14,
-        backgroundColor: 'red',
+        height: 8,
+        backgroundColor: '#ebebeb',
     },
 });
 

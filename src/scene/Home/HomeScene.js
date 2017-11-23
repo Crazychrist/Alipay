@@ -6,6 +6,7 @@ import { color, DetailCell, NavigationItem, SpacingView,SearchBar } from '../../
 import HomeMenuView from './HomeMenuView'
 import HomeMenuItem from './HomeMenuItem'
 import CellLine from './CellLine'
+import HomeBananer from './HomeBananer'
 class HomeScene extends Component {
   static navigationOptions = ({navigation})=>({
     headerTitle:(
@@ -62,6 +63,7 @@ rederSecondView(){
               <HomeMenuView />
               {this.rederSecondView()}
               <CellLine />
+              <HomeBananer/>
               </ScrollView>
           </View>
       );
